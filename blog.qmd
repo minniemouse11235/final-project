@@ -1,0 +1,98 @@
+---
+title: "Sample blog post"
+subtitle: "eCOTS 2024"
+author: "Debbie Yuster"
+number-sections: false
+format:
+  html:
+    theme: default
+    rendering: embed-resources
+    code-fold: true
+    code-tools: true
+    toc: true
+---
+
+
+![Source: Ramapo College of New Jersey](https://www.ramapo.edu/tours/wp-content/uploads/sites/344/2020/10/Fall-Arch-Straigh-Edit.jpg){fig-alt="A photo of the arch at Ramapo College."}
+
+
+# Introduction
+
+
+**Welcome** to *my* ~~super~~ SUPER awesome `blog` post!
+
+My undergraduate Data Science senior capstone students 
+at Ramapo College of New Jersey are required to use Quarto
+to typeset their final reports, known as "final blog posts".
+The Quarto Markdown (QMD) file used to create this blog post
+can serve as a starter file for your own blog post project.
+
+The repository housing this blog post (and associated files) can be
+found [here](https://github.com/debbieyuster/ecots24).
+
+## Features
+
+Your blog post can contain a mix of richly formatted text,
+equations, images, code, plots and tables generated from code,
+citations and cross references, and much more.
+
+Here's a mathematical equation, written in $\LaTeX$ syntax:
+$$x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+
+Here's an example of a "callout":
+
+:::{.callout-note}
+Note that there are five types of callouts, including:
+`note`, `tip`, `warning`, `caution`, and `important`.
+:::
+
+Here's an example of a Python code cell. If you'd like to view the
+code, click the drop-down triangle next the word "Code".
+The code can be configured to be either displayed or hidden by
+default, and the output can be displayed or suppressed.
+
+```{python}
+import random
+
+n = 10
+sum = 0
+print("Let's roll a die", n, "times:")
+for i in range(1, n+1):
+  roll = random.randint(1, 6)  # roll the die
+  print("Roll", i, "landed on:", roll)
+  sum += roll
+print("The sum of the", n, "die rolls is:", sum)
+```
+
+Next let's display a table:
+
+| Report Format | Fun Level |
+|------|------|
+| PDF  | Normal |
+| HTML | High   |
+
+: Fun level of various report formats {#tbl-formats}
+
+Quarto will automatically number your tables and figures, and you
+can refer to them without needing to know those numbers.
+
+Here is an example of a cross-reference: See @tbl-formats.
+If this document were longer, clicking the hyperlink would cause
+your cursor to jump right to the table.
+
+Blog posts allow you to do all sorts of stuff that can't
+be done in a static PDF document - like embed videos!
+
+{{< video https://www.youtube.com/embed/dQw4w9WgXcQ >}}
+
+# Learn more
+
+This blog serves as a (fairly) minimal working example.
+Your blog post can include so much more, for example:
+
+* Tables and (interactive) plots generated on the fly from datasets
+* Captions and hyperlinked references
+* Embedded videos or applets
+* Bibliographies, using BibTeX
+
+For more information, visit the [Quarto website](https://quarto.org/).
