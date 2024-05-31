@@ -1,7 +1,7 @@
 ---
 title: "Sample blog post"
 subtitle: "eCOTS 2024"
-author: "Debbie Yuster"
+author: "Minnie Mouse"
 number-sections: false
 format:
   html:
